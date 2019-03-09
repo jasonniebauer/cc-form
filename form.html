@@ -1,9 +1,78 @@
 <form action="" method="POST">
-  <input type="text" name="fname">
-  <input type="text" name="lname">
-  <input type="tel" name="phone">
-  <input type="number" name="ccv">
-  <select name="month">
+  <label for="cardholderName">Cardholder Name</label>
+  <input id="cardholderName" type="text" name="cardholder_name">
+  <label for="cardholderAddress">Cardholder Address</label>
+  <input id="cardholderAddress" type="text" name="cardholder_address">
+  <label for="cardholderCity">Cardholder City</label>
+  <input id="cardholderCity" type="text" name="cardholder_city">
+  <label for="cardholderState">Cardholder State</label>
+  <select id="cardholderState" name="cardholder_state">
+    <option value="" disabled>Please Select</option>
+    <option value="Alabama">Alabama</option>
+    <option value="Alaska">Alaska</option>
+    <option value="Arizona">Arizona</option>
+    <option value="Arkansas">Arkansas</option>
+    <option value="California">California</option>
+    <option value="Colorado">Colorado</option>
+    <option value="Connecticut">Connecticut</option>
+    <option value="Delaware">Delaware</option>
+    <option value="Florida">Florida</option>
+    <option value="Georgia">Georgia</option>
+    <option value="Hawaii">Hawaii</option>
+    <option value="Idaho">Idaho</option>
+    <option value="Illinois">Illinois</option>
+    <option value="Indiana">Indiana</option>
+    <option value="Iowa">Iowa</option>
+    <option value="Kansas">Kansas</option>
+    <option value="Kentucky">Kentucky</option>
+    <option value="Louisiana">Louisiana</option>
+    <option value="Maine">Maine</option>
+    <option value="Maryland">Maryland</option>
+    <option value="Massachusetts">Massachusetts</option>
+    <option value="Michigan">Michigan</option>
+    <option value="Minnesota">Minnesota</option>
+    <option value="Mississippi">Mississippi</option>
+    <option value="Missouri">Missouri</option>
+    <option value="Montana">Montana</option>
+    <option value="Nebraska">Nebraska</option>
+    <option value="Nevada">Nevada</option>
+    <option value="New Hampshire">New Hampshire</option>
+    <option value="New Jersey">New Jersey</option>
+    <option value="New Mexico">New Mexico</option>
+    <option value="New York">New York</option>
+    <option value="North Carolina">North Carolina</option>
+    <option value="North Dakota">North Dakota</option>
+    <option value="Ohio">Ohio</option>
+    <option value="Oklahoma">Oklahoma</option>
+    <option value="Oregon">Oregon</option>
+    <option value="Pennsylvania">Pennsylvania</option>
+    <option value="Rhode Island">Rhode Island</option>
+    <option value="South Carolina">South Carolina</option>
+    <option value="South Dakota">South Dakota</option>
+    <option value="Tennessee">Tennessee</option>
+    <option value="Texas">Texas</option>
+    <option value="Utah">Utah</option>
+    <option value="Vermont">Vermont</option>
+    <option value="Virginia">Virginia</option>
+    <option value="Washington">Washington</option>
+    <option value="West Virginia">West Virginia</option>
+    <option value="Wisconsin">Wisconsin</option>
+    <option value="Wyoming">Wyoming</option>
+  </select>
+  <label for="cardholderZip">Cardholder Zip</label>
+  <input id="cardholderZip" type="number" name="cardholder_zip">
+  <label for="cardType">Card Type</label>
+  <select id="cardType" name="card_type">
+    <option value="" disabled>Please Select</option>
+    <option value="American Express">American Express</option>
+    <option value="Discover">Discover</option/>
+    <option value="MasterCard">MasterCard</option/>
+    <option value="VISA">VISA</option/>
+  </select>
+  <label for="cardNumber">Card Number</label>
+  <input id="cardNumber" type="number" name="card_number">
+  <label>Card Expiration Date</label>
+  <select name="expiryMonth">
     <option selected="true" disabled="disabled">Month</option>
     <option value="01">01 - January</option>
     <option value="02">02 - February</option>
@@ -18,12 +87,19 @@
     <option value="11">11 - November</option>
     <option value="12">12 - December</option>
   </select>
-  <select name="year">
-    <option selected="true" disabled="disabled">Year</option>
+  <select name="expiryYear">
+    <option value="" disabled">Year</option>
   </select>
-  <input type="number" name="postal-code">
-  <select name="country">
-    <option selected="true" disabled="disabled">Country</option>
-  </select>
+  <label for="cardSecurityCode">Card Security Code</label>
+  <input id="cardSecurityCode" type="number" name="card_security_code">
+  <label>Payment Amount</label>
+  <input type="number" name="dollar_amount">
+  <input type="number" name="cent_amount">
+  <label for="emailAddress">Email Address to Send Confirmation to</label>
+  <input id="emailAddress" type="email" name="email_address">
+  <label>Phone Number</label>
+  (<input type="number" name="phone_area_code">)
+  <input type="number" name="phone_3_digit">-
+  <input type="number" name="phone_4_digit">
   <input type="submit" value="Pay Now">
 </form>
